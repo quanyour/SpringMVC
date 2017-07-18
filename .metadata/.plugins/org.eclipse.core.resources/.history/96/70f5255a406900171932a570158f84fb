@@ -1,0 +1,15 @@
+package org.fkit.controller;
+
+import org.springframework.stereotype.Controller;
+
+
+/**
+ * Hello1Controller是一个基于注解的控制器
+ * 可以同时处理多个请求动作，并且无需实现任何接口
+ * @author Cain
+ *
+ */
+@Controller
+public class Hello1Controller {
+
+}

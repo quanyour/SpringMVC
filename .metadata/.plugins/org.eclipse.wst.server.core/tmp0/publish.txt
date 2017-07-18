@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue Jul 18 18:19:37 CST 2017
+org.eclipse.jst.jee.server\:/binary\:F\:\\practiceCode\\GitSpringMVCProject\\SpringMVCProject\\SpringMVC01_AnnotationTest\\WebContent\\WEB-INF\\lib\\spring-web-4.3.9.RELEASE.jar=WEB-INF/lib/spring-web-4.3.9.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:F\:\\practiceCode\\GitSpringMVCProject\\SpringMVCProject\\SpringMVC01\\WebContent\\WEB-INF\\lib\\spring-web-4.3.9.RELEASE.jar=WEB-INF/lib/spring-web-4.3.9.RELEASE.jar

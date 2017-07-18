@@ -1,0 +1,30 @@
+package org.fkit.controller;
+
+import org.apache.commons.logging.Log;
+import org.apache.commons.logging.LogFactory;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.portlet.bind.annotation.RenderMapping;
+
+
+/**
+ * Hello1Controller是一个基于注解的控制器
+ * 可以同时处理多个请求动作，并且无需实现任何接口
+ * spring-context-4.3.9.RELEASE.jar/org.springframework.stereotype用来指示该类是一个控制器
+ * @author Cain
+ *
+ */
+@Controller
+public class Hello1Controller {
+	private static final Log logger=LogFactory.getLog(HelloController.class);
+	
+	
+	/**
+	 * org.springframework.web.bind.annotation.RequestMapping注解
+	 * 
+	 * @return
+	 */
+	@RenderMapping(value="/hello")
+	public ModelAndView hello(){
+		
+	}
+}
