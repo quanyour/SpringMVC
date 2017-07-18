@@ -1,5 +1,5 @@
 # SpringMVCProject
-java后端基础技术练习，知识点总结，问题总结
+java后端技术练习，知识点总结，问题总结
 ## 更新说明
 2017/7/15-17.23，HelloWorld版本的SpringMVC<br>
 2017/7/18-18.26，SpringMvc的注解简单应用<br>
