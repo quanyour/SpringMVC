@@ -39,4 +39,6 @@ public class HelloController {
 		//·µ»ØModelAndView¶ÔÏó
 		return mv;
 	}
+	
+	
 }
