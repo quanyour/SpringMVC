@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- XML配置文件包含对Mybatis系统核心设置 -->
+<configuration>
+	<!-- 指定Mybatis所用日志的具体实现 -->
+	<settings>
+		<setting name="logImpl" value="LOG4J" />
+	</settings>
+	<!-- 环境配置 ，即连接的数据库 -->
+	<environments default="mysql">
+		<environment id="mysql">
+
+			<!-- 指定事务管理类型，type=“JDBC”指直接简单使用了JDBC的提交和回滚设置 -->
+			<transactionManager type="JDBC" />
+			<!-- dataSource 指数据源配置，POOLED是JDBC连接对象的数据源连接池的实现 -->
+			<dataSource type="POOLED">
+				<property name="driver" value="com.mysql.jdbc.Driver" />
+				<property name="url" value="jdbc:mysql://localhost:3306/mybatis" />
+				<property name="username" value="root" />
+				<property name="password" value="3304736" />
+			</dataSource>
+		</environment>
+	</environments>
+	<mappers>
+		<mapper resource="mybatis/mapper/UserMapper.xml"/>
+	</mappers>
+</configuration>
