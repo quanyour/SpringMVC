@@ -1,5 +1,6 @@
 package mybatis.bean;
 
+
 public class User {
 	//用户标识
 	private Integer id;
@@ -41,6 +42,10 @@ public class User {
 	}
 	public void setAge(Integer age) {
 		this.age = age;
+	}
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", name=" + name + ", sex=" + sex + ", age=" + age + "]";
 	}
 	
 	
