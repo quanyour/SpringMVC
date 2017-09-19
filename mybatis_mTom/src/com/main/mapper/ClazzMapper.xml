@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.main.mapper.ClazzMapper">
+	<select id="selectClazzById" parameterType="int" resultMap="clazzResultMap">
+		select * from tb_clazz where id=#{id}
+	</select>
+	<!-- 映射person对象的resultMap -->
+	<resultMap type="com.main.bean.Clazz" id="clazzResultMap">
+		<id property="id" column="id"/>
+		<result property="name" column="name"/>
+		<result property="code" column="code"/>
+		<!-- 一对多关联映射：collection,将用column的card_id作为select的查询参数 -->
+		<collection property="student" javaType="ArrayList"
+		column="id" ofType="com.main.bean.Student"
+		select="com.main.mapper.StudentMapper.selectStudentByClazzId"
+		fetchType="lazy">
+			<id property="id" column="id"/>
+			<result property="name" column="name"/>
+			<result property="sex" column="sex"/>
+			<result property="age" column="age"/>
+		</collection>
+	</resultMap>
+</mapper>
